@@ -1,0 +1,103 @@
+.noPaddingBottom {
+  padding-bottom: 0px !important;
+  width: 457px;
+}
+.networkSelector {
+  padding-bottom: 2rem;
+  font-size: 14px;
+  input {
+    height: auto !important;
+  }
+  .react-select__menu {
+    margin-top: 0px;
+    color: #87a7c3 !important;
+  }
+  .react-select {
+    font-family: 'Uni Neue Regular';
+    max-width: 530px;
+    &__value-container {
+      padding: 0px 8px !important;
+    }
+    &__control {
+      padding-left: 10px;
+      height: 45px !important;
+      background: #031120 !important;
+      // border-radius: var(--unnamed-border-radius-1) !important;
+      border: 1px solid #071826 !important;
+      &:after {
+        border: 1px solid #071826 !important;
+      }
+      &:hover {
+        border: 1px solid #071826 !important;
+      }
+      &--menu-is-open {
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        svg {
+          transform: rotate(180deg) !important;
+        }
+      }
+    }
+
+    &__single-value {
+      padding-left: 0.5rem;
+      margin: 0rem !important;
+      color: #87a7c3 !important;
+    }
+    &__indicator-separator {
+      display: none !important;
+    }
+    &__dropdown-indicator {
+      & > svg {
+        width: 30px;
+        height: 30px;
+        fill: #00b2ff;
+      }
+    }
+    &__menu {
+      border-radius: 0px !important;
+      border: 1px solid #071826 !important;
+      border-top: 0px !important;
+      background: #031120 !important;
+      color: #87a7c3 !important;
+      outline: none;
+    }
+    &__option {
+      padding-left: 12px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: #031120 !important;
+      color: #87a7c3 !important;
+      &:hover {
+        color: var(--unnamed-color-28) !important;
+        background: #031120 !important;
+      }
+    }
+    &__optionText {
+      padding-left: 12px;
+    }
+    &__imageBlock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 28px;
+      height: 28px;
+      border: 2px solid rgba(255, 255, 255, 0.02);
+      border-radius: 6px;
+      img {
+        width: 14.25px;
+      }
+      @media (prefers-color-scheme: dark) {
+        background: linear-gradient(
+          180deg,
+          #062038 0%,
+          #01152d 100%
+        ) !important;
+      }
+      @media (prefers-color-scheme: light) {
+        background: #031120 !important;
+      }
+    }
+  }
+}
